@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+
+<body>
+    <!-- Formulário Game:
+    - nome
+    - categoria
+        Luta
+        Ação
+        Bullethells
+        RPG
+        Arcade
+        Terror
+    - preço
+    - ano_lancamento
+    - descrição -->
+    <header>
+        <h1>Formulário de Games</h1>
+    </header>
+
+    <main>
+        <form action="resultado.html" method="POST">
+            <label for="gamename">Nome do Game</label><br><br>
+            <input type="text" id="game" name="gamename" value="Nome do Game"><br><br>
+            <label for="category">Categoria</label><br><br>
+            <input type="text" id="category" name="category" value="Jogo de que?"><br><br>
+            <input type="radio" id="luta" name="category" value="luta">
+            <label for="male">Luta</label>
+            <input type="radio" id="acao" name="category" value="acao">
+            <label for="female">Ação</label>
+            <input type="radio" id="RPG" name="category" value="RPG">
+            <label for="other">RPG</label>
+            <input type="radio" id="Arcade" name="category" value="Arcade">
+            <label for="other">Arcade</label>
+            <input type="radio" id="bullethells" name="category" value="bullethells">
+            <label for="other">Bullethells</label>
+            <input type="radio" id="terror" name="category" value="terror">
+            <label for="other">Terror</label><br><br>
+            <input type="submit" value="Submit"><br><br>
+            <label for="price">Preço</label><br>
+            <input type="number" id="price" name="price" value="insira o preço do game"><br><br>
+            <label for="text">Ano de lançamento</label><br><br>
+            <input type="year" id="year" name="year" value="insira o ano do game"><br><br>
+            <label for="descrição">Descrição</label><br><br>
+            <textarea rows="10" type="text" id="year" name="year" value="Descreva o game"></textarea>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
